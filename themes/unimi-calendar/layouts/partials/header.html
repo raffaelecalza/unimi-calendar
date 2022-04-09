@@ -1,7 +1,7 @@
 <nav class="container">
     <ul>
         {{ if ne .Title "unimi-calendar"}}
-        <li><strong><a href="{{ "/" | absLangURL }}">{{ .Site.Title }}</a></strong></li>
+        <li><strong><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></strong></li>
         {{ end }}
     </ul>
     <ul>
