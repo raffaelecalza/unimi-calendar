@@ -13,7 +13,7 @@ Clicca su `Calendars and email`.
 ### 3° step
 Clicca su `Add Calendar` e dal sottomenu che si apre clicca su `URL`.
 
-![3](./3.png)
+![3](./1.png)
 
 ### 4° step
 Inserisci l'URL e clicca su `Conferma`. Da ora potrai vedere il calendario delle lezioni sia nella lista dei task della giornata, sia nella visione a calendario.
@@ -22,4 +22,4 @@ Inserisci l'URL e clicca su `Conferma`. Da ora potrai vedere il calendario delle
 - Può capitare che il calendario non si sincronizzi correttamente tra browser e app, nel caso basta riaggiungerlo dall'applicazione
 - Il calendario ha 3 modalità di visualizzazione: nascosto, visible solo nel calendario, visibile nel calendario e nella lista di task. La modalità può essere scelta cliccando sul pulsante `Modifica` dopo aver seguito gli step 1 e 2.
 
-![5](./5.png)
+![5](./2.png)
