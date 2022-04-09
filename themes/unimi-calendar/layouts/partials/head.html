@@ -5,5 +5,5 @@
     <!-- PicoCSS -->
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
     <!-- Customization -->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="{{ (resources.Get "css/style.css" | minify).RelPermalink }}" />
 </head>

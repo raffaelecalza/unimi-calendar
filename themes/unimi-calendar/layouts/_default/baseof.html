@@ -11,16 +11,19 @@
         {{- partial "footer.html" . -}}
         
         <!-- Modal script -->
-        <script src="/js/modal.min.js"></script>
+        <script src="{{ (resources.Get "js/modal.min.js").RelPermalink }}"></script>
         {{ if eq .Title .Site.Title }}
-            <script>
-                var unimiURL = {{ .Site.Params.unimiURL }}
-                var invalidURL = {{ i18n "invalid_url" }}
-                var alertSuccess = {{ i18n "alert_success" }}
-                var alertError = {{ i18n "alert_error" }}
-                var copyNotSupported = {{ i18n "copy_not_supported" }}
-            </script>
-            <script src="{{ "/js/converter.js" }}"></script>
+        <!-- js constants (i18n) -->
+        <script>
+            var unimiURL = {{ .Site.Params.unimiURL }}
+            var invalidURL = {{ i18n "invalid_url" }}
+            var alertSuccess = {{ i18n "alert_success" }}
+            var alertError = {{ i18n "alert_error" }}
+            var copyNotSupported = {{ i18n "copy_not_supported" }}
+        </script>
+
+        <!-- Converter script -->
+        <script src="{{ (resources.Get "js/converter.js" | minify).RelPermalink }}"></script>
         {{ end }}
     </body>
 </html>
