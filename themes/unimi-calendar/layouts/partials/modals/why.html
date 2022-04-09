@@ -5,7 +5,7 @@
         <h3>{{ i18n "wtf_title" }}</h3>
         {{ i18n "wtf_description" | safeHTML }}
         <div class="center">
-            <img src="/img/work.jpg" alt="" />
+            <img src="{{ "/img/work.jpg" | relLangURL }}" alt="" />
         </div>
     </article>
 </dialog>
