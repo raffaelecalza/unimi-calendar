@@ -1,10 +1,10 @@
 title = 'unimi-calendar'
+baseURL = 'https://raffaelecalza.github.io/unimi-calendar/'
 theme = "unimi-calendar"
 defaultContentLanguage = "it"
 disableKinds = ["sitemap", "RSS", "section"]
 
 [params]
-baseURL = 'http://localhost:1313'
 description = "Sincronizza l'orario delle lezioni con il tuo calendario, senza utilizzare l'app di unimi"
 unimiUrl = "https://easystaff.divsi.unimi.it/PortaleStudenti/index.php?view=easycourse"
 githubUrl = "https://github.com/raffaelecalza/unimi-calendar/"
