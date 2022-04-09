@@ -1,4 +1,22 @@
-baseURL = ''
-languageCode = 'it-it'
 title = 'unimi-calendar'
-theme = 'paper'
+theme = "unimi-calendar"
+defaultContentLanguage = "it"
+disableKinds = ["sitemap", "RSS", "section"]
+
+[params]
+baseURL = 'http://localhost:1313'
+description = "Sincronizza l'orario delle lezioni con il tuo calendario, senza utilizzare l'app di unimi"
+unimiUrl = "https://easystaff.divsi.unimi.it/PortaleStudenti/index.php?view=easycourse"
+githubUrl = "https://github.com/raffaelecalza/unimi-calendar/"
+footer = "Built with ❤️ and some ☕️"
+
+[languages]
+  [languages.en]
+    description = "Synchronise your class schedule with your calendar, without using the unimi app"
+    weight = 2
+    flag = "🇬🇧"
+    stringsJS = "js/strings_en.js"
+  [languages.it]
+    weight = 1
+    flag = "🇮🇹"
+    stringsJS = "js/strings_it.js"

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html data-theme="light">
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <main class="container">
+        {{- block "main" . }}{{- end }}
+        <!-- Cool, but why? -->
+        {{ partial "modals/why.html" }}
+        </main>
+        {{- partial "footer.html" . -}}
+        
+        <!-- Modal script -->
+        <script src="/js/modal.min.js"></script>
+        {{ if eq .Title .Site.Title }}
+            <script>
+                var unimiURL = {{ .Site.Params.unimiURL }}
+                var invalidURL = {{ i18n "invalid_url" }}
+                var alertSuccess = {{ i18n "alert_success" }}
+                var alertError = {{ i18n "alert_error" }}
+                var copyNotSupported = {{ i18n "copy_not_supported" }}
+            </script>
+            <script src="{{ "/js/converter.js" }}"></script>
+        {{ end }}
+    </body>
+</html>

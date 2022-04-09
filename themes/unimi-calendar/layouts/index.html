@@ -1,0 +1,44 @@
+{{ define "main" }}
+<!-- Title -->
+<section>
+    <hgroup>
+        <h1 class="center">{{ .Title }}</h1>
+        <h3 class="center">{{ .Site.Params.description }}</h3>
+    </hgroup>
+</section>
+
+<!-- Steps -->
+<section>
+    <h3>ℹ️ {{ i18n "instructions_title" }}</h3>
+    <p>{{ i18n "instructions_description" | safeHTML }}</p>
+    <div id="url-container">
+        <label for="url">{{ i18n "url_form" }}</label>
+        <input type="text" id="url" name="url" oninput="urlChangeEvent()" placeholder="{{ .Site.Params.unimiUrl }}..." />
+        <label for="url">{{ i18n "ical_form" }}</label>
+        <input type="text" id="url-ical" value="" readonly />
+    </div>
+    <button id="ical-button" onclick="copyUrlToClipboard()">
+        {{ i18n "copy_btn" }}
+    </button>
+    <p id="result" class="center">-</p>
+</section>
+
+<!-- Calendar guides -->
+<section>
+    <h3 id="help">🤔 {{ i18n "add_to_cal_title" }}</h3>
+    {{ $guides := where .Site.RegularPages "Type" "guide" }}
+    {{ if eq (len $guides) 0 }}
+    <p>Attualmente non è presente nessuna guida... 😢</p>
+    {{ else }}
+    {{ range sort $guides ".Title" "asc" }}
+    <p class="guide">📎 <a href="{{ .Permalink }}">{{ .Title }}</a></p>
+    {{ end }}
+    {{ end }}
+</section>
+
+<!-- Contacts -->
+<section>
+    <h3>😎 {{ i18n "bug_title" }}</h3>
+    <p>{{ i18n "bug_description" }}</p>
+</section>
+{{ end }}

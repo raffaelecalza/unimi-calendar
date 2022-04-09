@@ -1,0 +1,9 @@
+{{ define "main" }}
+<hgroup class="center">
+    <h1>Guida per {{ .Title }}</h1>
+    <h3>{{ .Params.Description }}</h3>
+</hgroup>
+
+{{ .Content }}
+
+{{ end }}

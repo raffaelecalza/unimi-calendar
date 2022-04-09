@@ -1,0 +1,11 @@
+<!-- Modal -->
+<dialog id="modal-why">
+    <article>
+        <a href="#close" aria-label="Close" class="close" data-target="modal-why" onClick="toggleModal(event)"></a>
+        <h3>{{ i18n "wtf_title" }}</h3>
+        {{ i18n "wtf_description" | safeHTML }}
+        <div class="center">
+            <img src="/img/work.jpg" alt="" />
+        </div>
+    </article>
+</dialog>
