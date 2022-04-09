@@ -137,3 +137,17 @@ footer p {
     margin-top: 10px;
     width: 70%;
 }
+
+@media screen and (max-width: 768px) {
+    #url-container {
+        width: 100%;
+    }
+
+    #ical-button {
+        width: 100%;
+    }
+
+    #modal-why article div img {
+        width: 100%;
+    }
+}
