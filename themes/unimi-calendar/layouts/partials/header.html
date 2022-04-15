@@ -5,7 +5,7 @@
         {{ end }}
     </ul>
     <ul>
-        <li class="pointer" data-target="modal-why" onclick="toggleModal(event)">🤌 wtf?</li>
+        <li class="pointer" data-target="modal-wat" onclick="toggleModal(event)">🤌 wat?</li>
         <li>|</li>
         {{ range $.AllTranslations }}
         <li class="lang {{ if eq $.Site.Language .Language }}active-lang{{ end }}"><a href="{{ .Permalink }}">{{ .Language.Params.flag }}</a></li>
