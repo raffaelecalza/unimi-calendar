@@ -9,6 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 
 img {
     border-radius: var(--border-radius);
+    max-width: 70%;
 }
 
 .center {
@@ -134,11 +135,15 @@ footer p {
 }
 
 #modal-why article div img {
-    margin-top: 10px;
+    margin-top: 20px;
     width: 70%;
 }
 
 @media screen and (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+    
     #url-container {
         width: 100%;
     }
