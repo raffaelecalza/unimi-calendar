@@ -1,9 +1,17 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ .Title }}</title>
+    <title>
+        {{ if eq .Section "guide" }}
+            {{ i18n "guide_for" }}
+        {{ end }}
+        {{ .Title }}
+        {{ if eq .Section "guide" }}
+            | {{ .Site.Title }}
+        {{ end }}
+    </title>
     <!-- PicoCSS -->
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" integrity="sha384-0NojrWFg3Ff8q17gIYvkyw+Xtv5f1C91Wce+s0shYxMVcqbDwVr5svss10OLTGhu" crossorigin="anonymous" />
     <!-- Customization -->
     <link rel="stylesheet" href="{{ (resources.Get "css/style.css" | minify).RelPermalink }}" />
 </head>
