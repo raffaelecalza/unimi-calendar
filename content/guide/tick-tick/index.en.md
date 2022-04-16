@@ -4,18 +4,18 @@ description: "Add calendar subscription in Tick Tick"
 ---
 To add a calendar subscription in Tick Tick there are several ways depending on the device you are using. For simplicity's sake, here are the instructions for adding it from your browser.
 
-### 1st step
+### Step 1
 Open the Tick Tick webapp and go to [settings](https://ticktick.com/webapp/#settings).
 
-### 2nd step
+### Step 2
 Click on `Calendars and email`.
 
-### 3rd step
+### Step 3
 Click on `Add Calendar` and from the submenu click on `URL`.
 
 ![3](./1.png)
 
-### 4th step
+### Step 4
 Enter the calendar's url and click `Confirm`. You will now be able to see the lesson calendar both in the list of tasks for the day and in the calendar view.
 
 ### Remarks
