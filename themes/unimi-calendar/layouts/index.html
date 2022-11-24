@@ -10,7 +10,13 @@
 <!-- Steps -->
 <section>
     <h3>ℹ️ {{ i18n "instructions_title" }}</h3>
-    <p>{{ i18n "instructions_description" | safeHTML }}</p>
+    <ol>
+        <li>{{ i18n "instructions_1" | safeHTML }}</li>
+        <li>{{ i18n "instructions_2" | safeHTML }}</li>
+        <li>{{ i18n "instructions_3" | safeHTML }}</li>
+        <li>{{ i18n "instructions_4" | safeHTML }}</li>
+        <li>{{ i18n "instructions_5" | safeHTML }}</li>
+    </ol>
     <div id="url-container">
         <label for="url">{{ i18n "url_form" }}</label>
         <input type="text" id="url" name="url" oninput="urlChangeEvent()" placeholder="{{ .Site.Params.unimiUrl }}..." />

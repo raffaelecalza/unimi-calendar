@@ -3,6 +3,10 @@
     --font-size: 18px;
 }
 
+main.container {
+    padding-bottom: 0px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     --typography-spacing-vertical: 10px;
 }
@@ -134,9 +138,29 @@ footer p {
     font-size: 15px;
 }
 
-#modal-why article div img {
-    margin-top: 20px;
+#modal-wat article {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#modal-wat article p {
+    font-size: 16px;
+}
+
+#modal-wat article .close {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#modal-wat article div img {
     width: 70%;
+    margin-bottom: 27px;
+}
+
+#credits {
+    font-size: 16px!important;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -152,7 +176,7 @@ footer p {
         width: 100%;
     }
 
-    #modal-why article div img {
+    #modal-wat article div img {
         width: 100%;
     }
 }

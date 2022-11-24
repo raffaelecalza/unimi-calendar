@@ -12,7 +12,7 @@ footer = "Built with ❤️ and some ☕️"
 
 [languages]
   [languages.en]
-    description = "Synchronise your class schedule with your calendar, without using the unimi app"
+    description = "Synchronize your class schedule with your calendar, without using the unimi app"
     weight = 2
     flag = "🇬🇧"
     stringsJS = "js/strings_en.js"

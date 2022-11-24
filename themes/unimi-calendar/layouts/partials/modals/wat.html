@@ -2,10 +2,12 @@
 <dialog id="modal-wat">
     <article>
         <a href="#close" aria-label="Close" class="close" data-target="modal-wat" onClick="toggleModal(event)"></a>
-        <h3>{{ i18n "wat_title" }}</h3>
+        <h3>🤌 wat?</h3>
         {{ i18n "wat_description" | safeHTML }}
         <div class="center">
             <img src="{{ "/img/work.jpg" | relURL }}" alt="" />
         </div>
+        <hr />
+        <p id="credits">Credits: {{ i18n "wat_credits" | safeHTML }}</p>
     </article>
 </dialog>
